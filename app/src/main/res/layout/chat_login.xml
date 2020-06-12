@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/login_linear">
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="550dp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#03B0FF"
+            android:id="@+id/heading"
+            android:textAlignment="center"></TextView>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/user_icon"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/form_field"
+            android:inputType="text"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="15dp"
+            android:scrollHorizontally="true"
+            android:id="@+id/email"
+            android:hint="Enter Aadhar/Mobile/Email"></EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp"
+            android:paddingVertical="15dp"
+            android:background="@drawable/form_field"
+            android:paddingHorizontal="10dp"
+            android:drawableLeft="@drawable/pass_icon"
+            android:drawablePadding="5dp"
+            android:id="@+id/pass"
+            android:layout_marginHorizontal="20dp"
+            android:inputType="textPassword"
+            android:scrollHorizontally="true"
+            android:hint="Enter Password"></EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="305dp"
+            android:textSize="18dp"
+            android:textColor="#03B0FF"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:text="Forgot Password?"></TextView>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="302dp"
+            android:layout_gravity="left"
+            android:textSize="16dp"
+            android:buttonTint="#03B0FF"
+            android:layout_marginLeft="20dp"
+            android:text="Remember Me"></CheckBox>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:id="@+id/login_btn"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/button_layout"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="110dp"></Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#03B0FF"
+            android:textSize="18dp"
+            android:id="@+id/signUp"
+            android:layout_gravity="bottom"
+            android:textAlignment="center"
+            android:text="Don't have an account? Sign Up"
+            android:layout_marginBottom="50dp"></TextView>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
